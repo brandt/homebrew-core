@@ -27,6 +27,8 @@ class Rust < Formula
   head do
     url "https://github.com/rust-lang/rust.git"
 
+    depends_on "xz" => :build
+
     resource "cargo" do
       url "https://github.com/rust-lang/cargo.git"
     end
